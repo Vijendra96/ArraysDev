@@ -1,0 +1,34 @@
+package com.array.pdf;
+
+import java.util.Arrays;
+import java.util.Scanner;
+//	find out the duplicate elements 
+public class Y23 {
+	 public static void main(String[] args) {      
+		 Scanner scan = new Scanner(System.in);
+	      System.out.print("Enter the size of first array: ");
+	      int length = scan.nextInt();
+	      int[] array = new int[length];
+	      System.out.print("Enter " + length + " elements for first array: ");
+	      for(int i = 0; i < length; i++)
+	      {
+	    	  array[i] = scan.nextInt();
+	      }
+		  System.out.println("inserted array is: " + Arrays.toString(array));
+		  System.out.println("==========");
+	        //Searches for duplicate element  
+	        for(int i = 0; i < length; i++)
+	        {
+	        	for(int j = i + 1; j < length; j++)
+	        	{
+	        		if(array[j] == array[i])
+	        		{
+						System.out.println(array[i] + " ");
+	        			break;
+	        		}
+	        		
+	        	}
+	        }
+			
+	 }
+}

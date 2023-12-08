@@ -1,0 +1,29 @@
+Array:
+======
+
+
+1.	int[] elements = new int[0]; //empty array
+	empty array should be possible,
+
+2.	int[] elements = new int[-10];
+	you can't provide a negative value becouse of negative value is also a integer but it will give runtime Exception and that is 				NegativeArraySizeException.
+	
+3.	double d1 = new double[5.0]; //it will give compile time error becouse of array size is double.
+	no matter type of array, size of the array should be interger.
+
+4.	by default array is a derived datatype.
+5.	enternally every array is derived datatype that is why we are using 'new' keyword.
+
+6.	int[] a = null;
+	int b[] = null;
+	int[]c = null;
+	all are correct to represent an array.
+
+7.	int[] elements = new int[]; //array size mandotery.
+
+8.	int[] x = new[]{10, 20, 30, 40, 50}; //it is absolutely possible.
+
+9.	int[] x = new[5]{10, 20, 30, 40, 50}; //you should not specify size and elements together.
+
+10.	to know the length of an array use length attribute. // System.out.println(x.length);
+11.	inside an array length is an attribute.	
